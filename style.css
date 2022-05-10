@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* 
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Karla';
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 50px;
+}
+
+.container{
+    margin: auto; 
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+
+.section-one{
+    padding: 30px;
+    color: hsl(218, 22%, 67%);
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.section-one h2{
+    color: hsl(179, 62%, 43%) ; 
+}
+
+.section-one h3{
+    color:hsl(71, 73%, 54%); 
+}
+
+.section-one p{
+    color: hsl(218, 22%, 67%); 
+}
+
+.next-contain{
+    display: flex; 
+}
+
+
+.section-two{
+    display: block; 
+    width: 50%;
+    padding: 30px; 
+    border-bottom-left-radius: 10px;
+    float: left;
+    background-color: hsl(179, 62%, 43%);
+    color: white; 
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-two .section-two-p{
+    color: hsl(204, 43%, 93%);
+}
+.section-two p{
+    color: hsl(204, 43%, 93%);
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    padding: 10px;
+    width: 75%;
+    border-radius: 4px;
+    font-weight: bold; 
+    border: none;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+strong{
+     font-size: 35px;
+     padding-right: 10px;
+     line-height: 1em;
+     color:white;
+}
+
+.section-three{
+    display: block;
+    width: 50%;
+    padding: 30px; 
+    float: left;
+    background-color: hsl(179, 47.2%, 51.8%);
+    color: white;
+    border-bottom-right-radius: 10px;
+    box-shadow: 6px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section-three-p{
+    color: hsl(204, 43%, 93%);
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+
+    .next-contain{
+        display: inline;
+    }
+
+    .section-two{
+        width: 100%;
+        border-bottom-left-radius: 0;
+        float: none;
+    }
+
+    .section-three{
+        width: 100%;
+        border-bottom-left-radius: 10px;
+        float: none;
+    }
+
+    .section-one p{
+        line-height: 1.5rem;
+    }
+
+    button{
+        width: 100%;
+    }
+
+}
+
+
+.attribution{
+    font-size: 1.5rem;
+}
